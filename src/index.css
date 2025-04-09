@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Jura:wght@300..700&family=Playwrite+VN:wght@100..400&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body{
+   background-color: #dcfce7;
+   color: #FFF;
+}
+
+.font {
+   font-family: "Jura", serif;
+   font-optical-sizing: auto;
+   font-weight: 900;
+   font-style: normal;
+   color: #FFF;
+}
+
+.bg-img {
+   background-image: url('./images/card-bg-img.avif');
+   border-radius: 12px;
+}
+
+.custom-scroll {
+   scrollbar-width: none; 
+}
+
