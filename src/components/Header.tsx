@@ -3,7 +3,7 @@ import { ClipboardCheck } from 'lucide-react';
 
 const Header: React.FC = () => {
   return (
-    <header className="w-[100%]  h-[72px] flex justify-between items-center font-bold bg-[#104225]">
+    <header className="w-[100%] h-[72px] text-[#FFF] flex justify-between items-center font-bold bg-[#104225]">
       <div className="flex items-center space-x-2 pl-[10px]">
         <ClipboardCheck />
         <span className="text-white font-bold text-lg ml-[10px]"><h2> Todo List</h2></span>

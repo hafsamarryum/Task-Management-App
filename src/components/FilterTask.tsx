@@ -10,7 +10,7 @@ const FilterTask = () => {
 
   return (
    <>
-      <div className="w-[95%] flex justify-end align-center gap-[5px] flex-wrap">
+      <div className="w-[95%] flex justify-end align-center gap-[5px] flex-wrap text-[#FFF]">
       <h4>Filter by:</h4>
       <input
         type="radio"

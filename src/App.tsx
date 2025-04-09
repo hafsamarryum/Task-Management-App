@@ -45,18 +45,18 @@ function App() {
       <Header />
       <div className="font">
         <div className="h-100 w-full flex justify-center items-center bg-black text-white">
-          <div className="w-[60%] formDiv mt-[15px] rounded-[16px] bg-[#22332B]"> 
-            <h1 className="font-bold text-3xl flex justify-center items-center text-black flex-wrap mt-[0px] h-[80px] w-full mb-[15px] px-[0px] bg-img text-white">
+          <div className="w-[60%] formDiv my-[15px] rounded-[16px] bg-[#22332B]"> 
+            <h1 className="font-bold text-3xl flex justify-center items-center flex-wrap mt-[0px] h-[80px] w-full mb-[15px] px-[0px] bg-img text-[#FFF]">
               Task Management App
             </h1>
             <div className="pl-[15px] pr-[4px]">
-              <p className="text-sm text-gray-300 mb-[10px]">Add your daily task:</p>
+              <p className="text-sm mb-[10px] text-[#FFF]">Add your daily task:</p>
 
               <form onSubmit={handleSubmit}>
                 <div className="mt-5">
                   <input
                     type="text"
-                    className="w-[95%] h-[40px] pl-[6px] mb-[1px] rounded-[8px] bg-[#dcfce7] border font"
+                    className="w-[95%] h-[40px] pl-[6px] mb-[1px] rounded-[8px] bg-[#dcfce7] text-[#272822] border font"
                     placeholder="Enter your task"
                     onChange={(e) => setTodo(e.target.value)}
                     value={todo}
@@ -76,7 +76,7 @@ function App() {
                 />
               </div>
 
-              <p className="text-sm text-gray-300 mb-[10px] mt-[1px]">List of tasks:</p>
+              <p className="text-sm text-[#FFF] mb-[10px] mt-[1px]">List of tasks:</p>
               <hr className="mr-[15px] mb-[15px]" />
 
               <div className="h-[230px] overflow-y-auto pr-2 custom-scroll mr-[10px]">
@@ -84,7 +84,7 @@ function App() {
                   displayedTodos.map((item) => (
                     <div
                       key={item.id}
-                      className={`relative w-[95%] rounded-[10px] px-[15px] py-[4px] mb-[10px] border flex justify-between items-center transition-transform duration-200 hover:translate-x-[5px] hover:shadow-[0_0_15px_rgba(0,255,231,0.2)] before:content-[''] before:absolute before:left-0 before:top-0 before:bottom-0 before:w-[4px] before:bg-teal-400 before:rounded-tl-[10px] before:rounded-bl-[10px] before:scale-y-0 before:origin-top hover:before:scale-y-100`}
+                      className={`relative w-[95%] rounded-[10px] px-[15px] py-[4px] mb-[10px] border flex justify-between items-center transition-transform duration-200 hover:translate-x-[5px] hover:shadow-[0_0_15px_rgba(0,255,231,0.2)] before:content-[''] before:absolute before:left-0 before:top-0 before:bottom-0 before:w-[4px] before:bg-teal-400 before:rounded-tl-[10px] before:rounded-bl-[10px] before:scale-y-0 before:origin-top hover:before:scale-y-100 text-[#FFF]`}
                     >
                       <p className={item.isDone ? "text-gray-400" : ""}>
                         <span className={item.isDone ? "line-through" : ""}>{item.todo}</span>
@@ -121,12 +121,12 @@ function App() {
                     </div>
                   ))
                 ) : (
-                  <p className="text-gray-300 bg-[#282828] h-[50px] mr-[10px] flex justify-center items-center">Task not found</p>
+                  <p className="text-gray-300 bg-[#dcfce7] text-[#4c4e42] h-[50px] mr-[10px] flex justify-center items-center">Task not found</p>
                 )}
               </div>
                
                {/* card section */}
-            <div className="flex md:flex-row gap-5 my-[20px] gap-[10px] relative z-[1] mr-[13px]">
+            <div className="flex md:flex-row gap-5 my-[20px] gap-[10px] relative z-[1] mr-[13px] text-[#FFF]">
               <div className="flex-1 text-center p-[28px] rounded-[12px] bg-[rgba(0,0,0,0.2)] border border-white/5 relative overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_10px_20px_rgba(0,0,0,0.2)] before:content-[''] before:absolute before:-top-1/2 before:-left-1/2 before:w-[200%] before:h-[200%] before:bg-[radial-gradient(circle,rgba(255,255,255,0.1)_0%,rgba(0,0,0,0)_70%)] before:opacity-0 hover:before:opacity-100 before:transition-all before:duration-300">
                 <div className="text-3xl mr-[8px] pb-[12px]">{todos.length}</div>
                 <div className="text-sm text-gray-300">Total Tasks</div>
@@ -141,9 +141,7 @@ function App() {
               </div>
             </div>
             
-
-
-            </div>
+          </div>
           </div>
         </div>
       </div>

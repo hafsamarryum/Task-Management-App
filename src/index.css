@@ -6,8 +6,10 @@
 
 
 body{
+   box-sizing: border-box;
+   margin: auto;
+   padding: auto;
    background-color: #dcfce7;
-   color: #FFF;
 }
 
 .font {
@@ -15,7 +17,6 @@ body{
    font-optical-sizing: auto;
    font-weight: 900;
    font-style: normal;
-   color: #FFF;
 }
 
 .bg-img {
